@@ -670,14 +670,13 @@ header {
     height: 100vh;
     padding-top: 90px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-    background:
-        linear-gradient(rgba(0, 0, 0, .60), rgba(0, 0, 0, .60)),
-        url("../images/divisions/dhaka.png");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    color: #fff;
+}
 
     display: flex;
     justify-content: center;
@@ -1357,4 +1356,25 @@ header {
 
     opacity:.8;
 
+}
+/* Dhaka Hero */
+.dhaka-hero{
+    background:
+        linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
+        url("../images/divisions/dhaka.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Chattogram Hero */
+.chattogram-hero{
+    background:
+        linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
+        url("../images/divisions/chattogram.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
