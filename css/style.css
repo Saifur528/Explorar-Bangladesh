@@ -1338,18 +1338,20 @@ header {
 
 }
 
-.footer .btn{
-
-    background:#fff;
-
-    color:#0d6efd;
-
+.footer .btn {
+    background: #fff;
+    color: #0d6efd;
 }
 
-.footer .btn:hover{
+.footer .btn:hover {
+    background: #f5f5f5;
+}
 
-    background:#f5f5f5;
-
+.footer .primary-btn {
+    margin: 5px 0;
+}
+.footer .primary-btn {
+    transform: translateY(-12px);
 }
 
 .copyright{
@@ -1419,4 +1421,211 @@ header {
     width: 170px;
     margin: 0 auto;
     display: block;
+}
+/* ==========================
+   Khulna Hero
+========================== */
+
+.khulna-hero {
+    background:
+        linear-gradient(rgba(0, 0, 0, .60), rgba(0, 0, 0, .60)),
+        url("../images/divisions/khulna.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* ================= GALLERY PAGE ================= */
+
+.gallery-page {
+    padding: 125px 0 60px;
+    background: #f8fafc;
+     flex: 1;
+}
+}
+
+.gallery-page .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery-page .section-title h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.gallery-page .section-title p {
+    color: #666;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.06);
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .gallery-item {
+        height: 180px;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 230px;
+    }
+
+}
+/* ================= STICKY FOOTER ================= */
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-page {
+    flex: 1;
+}
+/* ================= IMAGE LIGHTBOX ================= */
+
+.image-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s ease;
+
+    z-index: 9999;
+}
+
+.image-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.image-lightbox img {
+    max-width: 90%;
+    max-height: 85vh;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+.image-lightbox.active img {
+    transform: scale(1);
+}
+
+
+/* Close Button */
+
+.lightbox-close {
+    position: absolute;
+
+    top: 25px;
+    right: 35px;
+
+    color: white;
+
+    font-size: 45px;
+    font-weight: 300;
+
+    cursor: pointer;
+
+    z-index: 10000;
+
+    transition: 0.2s ease;
+}
+
+.lightbox-close:hover {
+    transform: scale(1.15);
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .image-lightbox img {
+        max-width: 94%;
+        max-height: 80vh;
+    }
+
+    .lightbox-close {
+        top: 15px;
+        right: 20px;
+        font-size: 38px;
+    }
+
 }
