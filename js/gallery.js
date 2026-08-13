@@ -26,13 +26,22 @@ const galleryImages = [
     "../images/sylhet/shahjalal.png",
     "../images/sylhet/teagarden.png",
 
-    // ================= KHULNA =================
+        // ================= KHULNA =================
     "../images/khulna/andharamanik.png",
     "../images/khulna/dublar_char.png",
     "../images/khulna/kuakata.png",
     "../images/khulna/shat_gombuj.png",
     "../images/khulna/sixty_dome_mosque.png",
-    "../images/khulna/sundarbans.png"
+    "../images/khulna/sundarbans.png",
+
+    // ================= RAJSHAHI =================
+    "../images/rajshahi/uttara_ganabhaban.png",
+    "../images/rajshahi/choto_sona_mosque.png",
+    "../images/rajshahi/paharpur.png",
+    "../images/rajshahi/bagha_mosque.png",
+    "../images/rajshahi/varendra_museum.png",
+    "../images/rajshahi/puthia.png"
+    
 
 ];
 
